@@ -1,0 +1,13 @@
+#1st Command Window
+#Starting the server
+#The log outputs are saved into logfile.txt
+cd SQUISHDIR/bin
+squishserver --verbose --logfile TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4/logfile.txt
+
+#2nd Command Window
+#Running squishrunner and creating reports
+#First squishrunner command generates an Excel file containing the test results in the "results" folder
+#Second squishrunner command generates files for an HTML-based report containing the test results in the "report" folder
+cd SQUISHDIR/bin
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --resultdir TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4/results --reportgen xls
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --reportgen html,TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4/report

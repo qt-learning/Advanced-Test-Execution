@@ -1,0 +1,11 @@
+<testconfig version="1.0">
+    <information>
+        <summary/>
+        <description/>
+    </information>
+    <tags>
+        <tag>Regression</tag>
+        <tag>ForDataDriven</tag>
+    </tags>
+    <testsettings/>
+</testconfig>

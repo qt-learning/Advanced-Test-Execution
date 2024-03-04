@@ -1,0 +1,23 @@
+#1st Command Window
+#Starting the server on specific host and port
+cd SQUISHDIR/bin
+squishserver --port 4322 --host localhost --verbose
+
+#2nd Command Window
+#Running squishrunner and executing all test cases of the test suite
+cd SQUISHDIR/bin
+squishrunner --host localhost --port 4322 --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 
+
+#3rd Command Window
+#Starting the server
+cd SQUISHDIR/bin
+squishserver
+
+#4th Command Window
+#Running squishrunner and executing specific test cases
+cd SQUISHDIR/bin
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --testcase tst_product --testcase tst_sum
+
+#Running squishrunner and executing all test cases of the test suite in random order
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --random --local
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --random 2877322191 --local

@@ -1,0 +1,13 @@
+#1st Command Window
+cd SQUISHDIR/bin
+#Running squishrunner and executing all test cases with the tag ForDataDriven
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --tags ForDataDriven --local
+
+#Running squishrunner and executing all test cases with the tag Regression or the tag Smoke
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --tags Regression,@Smoke --local
+
+#Running squishrunner and executing all test cases with the tag ForDataDriven and the tag Regression
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --tags ForDataDriven --tags Regression --local 
+
+#Running squishrunner and executing all test cases without the tag Regression
+squishrunner --testsuite TESTSUITEFOLDER\suite_advanced_test_execution_sections_2_to_4 --tags ~Regression --local
