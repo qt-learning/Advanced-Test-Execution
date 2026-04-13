@@ -1,3 +1,6 @@
+# Copyright (C) 2026 Qt Group.
+# SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
+
 #1st Command Window
 #Starting the server
 #The log outputs are saved into logfile.txt
